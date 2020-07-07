@@ -1,23 +1,23 @@
 /*
 Solution of assignment 4:
 Expected output:
-Hello Yaakov
-Good Bye John
+Hello Avadhi
+Good Bye sonu
 Good Bye Jen
 Good Bye Jason
-Hello Paul
-Hello Frank
-Hello Larry
+Hello Parul
+Hello Farhan
+Hello Guy
 Hello Paula
-Hello Laura
+Hello Lara
 Good Bye Jim
 */
 
 (function() {
-    var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
+    var names = ["Avadhi", "sonu", "Jen", "Jason", "Parul", "Fahan", "Guy", "Paula", "Lara", "Jim"];
     for (var i = 0; i < names.length; i++) {
         var firstLetter = names[i].charAt(0).toLowerCase();
-        if (firstLetter === 'j') {
+        if (firstLetter == 'j') {
             byeSpeaker.speak(names[i]);
         } else {
             helloSpeaker.speak(names[i]);
